@@ -1,0 +1,18 @@
+@import url('blog_post.css');
+
+.header_container {
+    background: linear-gradient(214.15deg, #FEDC2A 0%, #DD5789 48.12%, #7A2C9E 93.59%), url('../assets/Background\ pattern.png');
+}
+
+
+.header_image_container {
+    background-image: url('../assets/me_glasses_happy.svg');
+}
+
+.header_image_container:hover {
+    background-image: url('../assets/me_glassess_building_a_storybrand.svg');
+}
+
+.content_diagram {
+    background-image: url('../assets/storybrand.png');
+}

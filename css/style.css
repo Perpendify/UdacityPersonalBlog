@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+@import url('header.css');
+@import url('books.css');
+@import url('nav.css');
+@import url('footer.css');
+
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* set resizing width */
+body {
+    min-width: 375px;
+    margin: 0px;
+    line-height: 1.6;
+}
+
+
+/* section title styles */
+
+.section_title h2{
+    font-size: 24px;
+    line-height: 1.6;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* pagination styles adapted from w3school */
+
+.pagination_wrapper {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: rgb(24, 24, 24);
+    float: left;
+  }
+  
+  .pagination a.active {
+    background-color: #a1a1a1;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }

@@ -1,0 +1,25 @@
+/* nav styles adapted from w3schools */
+
+ul {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    list-style-type: none;
+    background-color: rgb(54, 52, 52);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    text-align: center;
+    padding: 14px 16px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    background-color: rgb(2, 2, 2);
+}

@@ -1,0 +1,21 @@
+@import url('blog_post.css');
+
+.header_container {
+    background: linear-gradient(146.22deg, #3A42E1 2.88%, #620C90 98.14%), url('../assets/Background\ pattern.png');
+}
+
+
+.header_image_container {
+    background-image: url('../assets/me_glasses_happy.svg');
+}
+
+.header_image_container:hover {
+    background-image: url('../assets/me_glassess_practical_Empathy.svg');
+}
+
+.content_diagram {
+    background-image: url('../assets/empathy_model.png');
+}
+
+
+

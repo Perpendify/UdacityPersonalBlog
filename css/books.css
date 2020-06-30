@@ -1,0 +1,170 @@
+/* all books classes 
+Note: 'books' are cards in this exercise */
+
+.reading_collection {
+    width: 100%;
+    min-width:375px;
+}
+
+.book_category_filter {
+    margin-bottom: 15px;
+}
+
+.book_category_button {
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    border: 1px #ddd solid;
+    background-color: white;
+    }
+    
+.active, .book_category_button:hover {
+    background-color: #5553EF;
+    color: white;
+}
+
+.books_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas:
+    'book1'
+    'book2'
+    'book3'
+    'book4';
+    width: 100%;
+    grid-gap: 15px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border: 1px grey solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+/* .book:hover {
+    box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+} */
+
+.book a {
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    color: blue;
+}
+
+.book_image {
+    display: block;
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+}
+
+.book_name h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.book_author {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.book_description p{
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#book1 {
+    background: url('../assets/building_a_storybrand.jpg') no-repeat center;
+    background-size: contain;
+}
+
+#book1_grid {
+    grid-area: book1;
+}
+
+#book2 {
+    background: url('../assets/practical_empathy.jpg') no-repeat center;
+    background-size: contain;
+}
+
+#book2_grid {
+    grid-area: book2;
+}
+
+#book3 {
+    background: url('../assets/competing_against_luck.jpg') no-repeat center;
+    background-size: contain;
+}
+
+#book3_grid {
+    grid-area: book3;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    
+    .reading_collection {
+        width: 375px;
+        margin: auto;
+    }
+    }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px)  { 
+
+    .reading_collection {
+        width: 650px;
+        margin: auto;
+    }
+
+    .books_container {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas:
+        'book1 book2'
+        'book3 book4';
+        width: 100%;
+    }
+
+    .book {
+        width: 300px;
+        height: 450px;
+    }
+
+
+
+    .book a{
+        margin-right: 20px;
+    }
+
+    .book_name h3{
+        font-size: 24px;
+        margin-right: 20px;
+    }
+
+    .book_author {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .book_description {
+        font-size: 16px;
+    }
+
+
+    }
